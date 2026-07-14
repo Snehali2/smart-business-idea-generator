@@ -1,0 +1,1 @@
+# smart-business-idea-generator
