@@ -1,0 +1,16 @@
+{
+  "name": "Smart Business Idea Generator",
+  "description": "An AI-powered agent built using IBM Orchestrate that generates innovative business ideas using trend analysis, research insights, and market intelligence.",
+  "version": "1.0.0",
+  "author": "Your Name",
+  "platform": "IBM Orchestrate",
+  "ai_model": "IBM Granite",
+  "features": [
+    "Business Idea Generation",
+    "Trend Analysis",
+    "Research-Based Suggestions",
+    "Feasibility Analysis",
+    "Multimodal Input",
+    "Interactive Dashboard"
+  ]
+}
