@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>IdeaForge AI | Smart Business Idea Generator</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+overflow-x:hidden;
+}
+
+header{
+padding:25px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:fixed;
+width:100%;
+background:rgba(15,23,42,.85);
+backdrop-filter:blur(12px);
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#38bdf8;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+margin-left:30px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 8%;
+background:linear-gradient(135deg,#0f172a,#1e3a8a,#312e81);
+}
+
+.hero-text{
+width:55%;
+}
+
+.hero-text h1{
+font-size:58px;
+line-height:70px;
+margin-bottom:20px;
+}
+
+.hero-text span{
+color:#38bdf8;
+}
+
+.hero-text p{
+font-size:18px;
+line-height:30px;
+color:#d1d5db;
+margin-bottom:35px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#38bdf8;
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+background:#0ea5e9;
+transform:translateY(-3px);
+}
+
+.hero-card{
+width:360px;
+background:white;
+color:#111827;
+padding:30px;
+border-radius:25px;
+box-shadow:0 20px 60px rgba(0,0,0,.4);
+}
+
+.hero-card h3{
+margin-bottom:20px;
+color:#2563eb;
+}
+
+.hero-card ul{
+line-height:35px;
+}
+
+section{
+padding:90px 8%;
+}
+
+.title{
+text-align:center;
+font-size:38px;
+margin-bottom:50px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.card{
+background:#1e293b;
+padding:30px;
+border-radius:20px;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+background:#2563eb;
+}
+
+.card h3{
+margin-bottom:15px;
+}
+
+.workflow{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+}
+
+.step{
+background:#1e293b;
+padding:25px;
+text-align:center;
+border-radius:20px;
+}
+
+.step span{
+display:inline-block;
+width:50px;
+height:50px;
+line-height:50px;
+background:#38bdf8;
+border-radius:50%;
+font-weight:bold;
+margin-bottom:15px;
+}
+
+.tech{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.tech div{
+background:#1e293b;
+padding:18px 35px;
+border-radius:40px;
+}
+
+footer{
+padding:30px;
+text-align:center;
+background:#020617;
+color:#94a3b8;
+}
+</style>
+
+</head>
+<body>
+<script>
+  window.wxOConfiguration = {
+    orchestrationID: "caa8da0336ba4ea2b3dd465fcece79b6_f8604605-24d5-4b2e-b955-752b6745cf3d",
+    hostURL: "https://au-syd.watson-orchestrate.cloud.ibm.com",
+    rootElementID: "root",
+    deploymentPlatform: "ibmcloud",
+    crn: "crn:v1:bluemix:public:watsonx-orchestrate:au-syd:a/caa8da0336ba4ea2b3dd465fcece79b6:f8604605-24d5-4b2e-b955-752b6745cf3d::",
+    chatOptions: {
+        agentId: "c24b8d8a-c6d9-4255-afbc-1ce96661ad8e", 
+    }
+  };
+  setTimeout(function () {
+    const script = document.createElement('script');
+    script.src = `${window.wxOConfiguration.hostURL}/wxochat/wxoLoader.js?embed=true`;
+    script.addEventListener('load', function () {
+        wxoLoader.init();
+    });
+    document.head.appendChild(script);
+  }, 0);                     
+</script>
+
+<header>
+
+<div class="logo">💡 IdeaForge AI</div>
+
+<nav>
+<a href="#features">Features</a>
+<a href="#workflow">Workflow</a>
+<a href="#tech">Technology</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>
+Transform Your <span>Ideas</span><br>
+Into Innovative Businesses
+</h1>
+
+<p>
+IdeaForge AI is an intelligent business idea generation agent powered by IBM Orchestrate.
+It combines market trends, research insights, and AI reasoning to create innovative,
+feasible, and high-impact business opportunities.
+</p>
+
+<a href="#" class="btn">Generate Ideas</a>
+
+</div>
+
+<div class="hero-card">
+
+<h3>🚀 What Our AI Can Do</h3>
+
+<ul>
+<li>📊 Analyze Market Trends</li>
+<li>📚 Research Business Opportunities</li>
+<li>🧠 Generate Creative Ideas</li>
+<li>📈 Predict Business Potential</li>
+<li>💼 Build Business Models</li>
+<li>🎯 Feasibility & Impact Score</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section id="features">
+
+<h2 class="title">✨ Powerful Features</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🧠 AI Idea Generation</h3>
+<p>Create innovative startup, product, research, and service ideas tailored to your goals.</p>
+</div>
+
+<div class="card">
+<h3>📊 Trend Analysis</h3>
+<p>Discover current market trends, emerging technologies, and future opportunities.</p>
+</div>
+
+<div class="card">
+<h3>📑 Research Insights</h3>
+<p>Generate ideas inspired by research papers, articles, and industry knowledge.</p>
+</div>
+
+<div class="card">
+<h3>📈 Feasibility Prediction</h3>
+<p>Evaluate every idea using innovation, scalability, market demand, and feasibility scores.</p>
+</div>
+
+<div class="card">
+<h3>🗺️ Idea Mapping</h3>
+<p>Visualize ideas with impact scores, categories, and structured business roadmaps.</p>
+</div>
+
+<div class="card">
+<h3>🎤 Multimodal Input</h3>
+<p>Accept text, voice, and image inputs for a richer brainstorming experience.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="workflow">
+
+<h2 class="title">⚙️ How It Works</h2>
+
+<div class="workflow">
+
+<div class="step">
+<span>1</span>
+<h4>User Input</h4>
+<p>Text, Image or Voice</p>
+</div>
+
+<div class="step">
+<span>2</span>
+<h4>AI Analysis</h4>
+<p>Understand Requirements</p>
+</div>
+
+<div class="step">
+<span>3</span>
+<h4>Research</h4>
+<p>Market & Trends</p>
+</div>
+
+<div class="step">
+<span>4</span>
+<h4>Idea Creation</h4>
+<p>Generate Smart Ideas</p>
+</div>
+
+<div class="step">
+<span>5</span>
+<h4>Business Report</h4>
+<p>Feasibility & Impact</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="tech">
+
+<h2 class="title">🛠 Technology Stack</h2>
+
+<div class="tech">
+
+<div>IBM Orchestrate</div>
+<div>IBM Granite</div>
+<div>Python</div>
+<div>FastAPI</div>
+<div>React</div>
+<div>MongoDB</div>
+<div>REST APIs</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>💡 IdeaForge AI</h3>
+
+<p>
+Innovate • Analyze • Build • Grow
+</p>
+
+<p style="margin-top:10px;">
+Powered by IBM Orchestrate & IBM Granite
+</p>
+
+</footer>
+
+</body>
+</html>
